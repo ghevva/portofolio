@@ -6,13 +6,13 @@
             "request": "launch",
             "name": "Live Server (http://127.0.0.1:5500)",
             "url": "http://127.0.0.1:5500/index.html",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}/public"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Buka index.html Langsung (File System)",
-            "file": "${workspaceFolder}/index.html"
+            "file": "${workspaceFolder}/public/index.html"
         }
     ]
 }

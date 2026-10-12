@@ -1,11 +1,12 @@
 {
     "liveServer.settings.port": 5500,
-    "liveServer.settings.root": "/",
+    "liveServer.settings.root": "/public",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.fullReload": true,
     "liveServer.settings.ignore": [
         ".vscode/**"
     ],
+    "livePreview.serverRoot": "public",
     "livePreview.defaultPreviewPath": "/index.html",
     "livePreview.autoRefreshPreview": "onChangesFromEditor"
 }
