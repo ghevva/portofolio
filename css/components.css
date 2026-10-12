@@ -1,0 +1,485 @@
+/* ==========================================================================
+   COMPONENTS STYLES
+   Cute + Aesthetic + Modern + Playful + Warm UI Components
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. BUTTONS (Cute & Playful Rounded Buttons)
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 28px;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  text-align: center;
+  user-select: none;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: #141312;
+  box-shadow: 0 4px 14px rgba(226, 202, 169, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  color: #141312;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(226, 202, 169, 0.35);
+}
+
+.btn-secondary {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface-hover);
+  border-color: var(--accent-border);
+  color: var(--text-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-primary);
+  background-color: var(--accent-subtle);
+  color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   2. BADGES & TAGS (Cute Decorative Badges)
+   -------------------------------------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-size: 0.825rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  background-color: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: var(--accent-pill-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.tag:hover {
+  border-color: var(--accent-border);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   3. PROJECT CARDS (Playful & Soft Hover)
+   -------------------------------------------------------------------------- */
+.project-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  border-color: var(--accent-border);
+  background-color: var(--bg-surface-hover);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md), var(--shadow-soft-glow);
+}
+
+.project-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, rgba(40, 38, 44, 0.9), rgba(22, 22, 24, 0.95));
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  overflow: hidden;
+}
+
+.project-thumbnail svg {
+  transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-thumbnail {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.project-card:hover .project-thumbnail svg {
+  transform: scale(1.12);
+}
+
+.project-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  transition: color var(--transition-fast);
+}
+
+.project-card:hover .project-title {
+  color: var(--accent-primary);
+}
+
+.project-description {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  margin-bottom: 20px;
+}
+
+.project-action {
+  margin-top: auto;
+}
+
+/* --------------------------------------------------------------------------
+   4. SKILL CATEGORY CARD & PILL COMPONENTS (Cute & Aesthetic)
+   -------------------------------------------------------------------------- */
+.skill-category-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.skill-category-card:hover {
+  border-color: var(--accent-border);
+  background-color: var(--bg-surface-hover);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skill-category-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.skill-category-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.skill-category-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.skill-pills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--accent-pill-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.skill-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+  background-color: var(--accent-subtle);
+  transform: translateY(-3px);
+}
+
+.skill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   5. CUTE AVATAR CARD & PROFILE FRAME
+   -------------------------------------------------------------------------- */
+.avatar-card {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+}
+
+.avatar-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-6px) rotate(1deg);
+  box-shadow: var(--shadow-lg), var(--shadow-soft-glow);
+}
+
+.avatar-frame {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(145deg, rgba(42, 39, 46, 0.9), rgba(22, 22, 24, 0.95));
+  border: 1.5px dashed var(--accent-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.avatar-frame-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--accent-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-border);
+}
+
+.avatar-frame-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+.avatar-caption {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.avatar-subcaption {
+  font-size: 0.785rem;
+  color: var(--text-secondary);
+}
+
+/* Cute Floating Badge Detail on Avatar */
+.avatar-cute-badge {
+  position: absolute;
+  bottom: -12px;
+  right: -10px;
+  background-color: var(--accent-primary);
+  color: #141312;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+  transform: rotate(-3deg);
+  transition: transform var(--transition-fast);
+}
+
+.avatar-card:hover .avatar-cute-badge {
+  transform: rotate(2deg) scale(1.05);
+}
+
+/* --------------------------------------------------------------------------
+   6. FORM CONTROLS (Cute & Warm Soft Inputs)
+   -------------------------------------------------------------------------- */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3.5px var(--accent-subtle);
+  outline: none;
+}
+
+.form-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* --------------------------------------------------------------------------
+   7. SECTION HEADERS & SUBTITLES
+   -------------------------------------------------------------------------- */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+.section-header.text-center .section-subtitle {
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   8. LANGUAGE SWITCHER (Cute Pill Toggle)
+   -------------------------------------------------------------------------- */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.lang-switcher:hover {
+  border-color: var(--accent-border);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+}
+
+.lang-btn.active {
+  background-color: var(--accent-primary);
+  color: #141312;
+  box-shadow: 0 2px 8px rgba(226, 202, 169, 0.25);
+}
+

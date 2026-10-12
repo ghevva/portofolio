@@ -1,0 +1,54 @@
+/* ==========================================================================
+   DESIGN TOKENS & VARIABLES
+   Cute + Aesthetic + Modern + Playful + Warm Dark Neutral Color Palette
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Dark Warm Neutral (Non-Pure Black, Cozy & Warm) */
+  --bg-main: #161618;            /* Warm Dark Charcoal - Main background */
+  --bg-surface: #1f1e22;         /* Dark Warm Gray - Cozy cards & containers */
+  --bg-surface-hover: #28262c;   /* Soft warm hover state */
+  --bg-card: #1c1b1f;            /* Card base background */
+  --bg-nav: rgba(22, 22, 24, 0.88); /* Semi-transparent cozy navbar */
+  
+  /* Text Colors - Soft Cream & Warm Off-White */
+  --text-primary: #f5f0eb;       /* Soft Cream / Warm Off-White - Main text */
+  --text-secondary: #a89f95;     /* Warm Soft Taupe - Muted body text */
+  --text-muted: #787067;         /* Warm Darker Taupe - Metadata & captions */
+  
+  /* Accent & Highlight Colors - Cozy Warm Sand, Butter Cream & Taupe */
+  --accent-primary: #e2caa9;     /* Cozy Warm Sand / Warm Cream */
+  --accent-hover: #eedac0;       /* Lighter Butter Cream on hover */
+  --accent-subtle: rgba(226, 202, 169, 0.12); /* Soft warm accent fill */
+  --accent-border: rgba(226, 202, 169, 0.28); /* Warm accent border */
+  --accent-pill-bg: #282522;     /* Warm pill background */
+  
+  /* Borders & Dividers */
+  --border-color: #2c2a30;       /* Soft warm border */
+  --border-hover: #423e48;       /* Warm border on hover */
+  
+  /* Typography System */
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif;
+  
+  /* Spacing System */
+  --container-width: 1120px;
+  --section-padding: 96px 0;
+  --section-padding-mobile: 64px 0;
+  
+  /* Extra Soft & Playful Border Radius */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+  
+  /* Soft Cozy Shadows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.45);
+  --shadow-soft-glow: 0 8px 24px rgba(226, 202, 169, 0.08);
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
